@@ -109,7 +109,8 @@ body {
     /* padding: 120px 100px; */
     padding: 7.5rem 6.25rem;
     background-color: #F2F5F6;
-    width: 100%;
+    width: 100%;;
+  
 
 }
 
@@ -254,6 +255,76 @@ body {
 } */
 
 
+
+/* trusted brand section styles*/
+.client-section {
+    text-align: center;
+    width: 100%;
+   
+    padding: 3.5rem 2rem;
+    background-color: #fff;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.client-section h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    width: 20%;
+    text-align: center;
+}
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    /* border: 1px solid blue; */
+}
+.brand img {
+    height: 20px;
+    /* filter: grayscale(100%); */
+    transition: opacity 0.3s ease;
+}
+/* .brand img:hover {
+    opacity: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------- media query styles for tablet----------------------------- */
 
 
@@ -261,6 +332,7 @@ body {
 
     #hero{
         padding: 4.5rem 3.25rem;
+       
     }
     .hero-section {
         flex-direction: column;
@@ -314,6 +386,11 @@ body {
 
     .second-img {
         display: none;
+    }
+
+    .client-section{
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
