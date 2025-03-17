@@ -273,7 +273,6 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #000;
-    width: 20%;
     text-align: center;
 }
 .brands {
@@ -373,6 +372,9 @@ body {
 
 
     }
+    .brands {
+        gap: 2rem;
+    }
 }
 
 
@@ -392,5 +394,7 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+
+
 
 }
