@@ -597,6 +597,15 @@ body {
         max-width: 95%;
         margin: 0 auto;
     }
+
+    .numbers{
+        padding: 2.5rem 1rem;
+    }
+
+    .number-item h2{
+        font-size: 1.5rem;
+    }
+
 }
 
 
