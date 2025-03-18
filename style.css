@@ -110,8 +110,6 @@ body {
     padding: 7.5rem 6.25rem;
     background-color: #F2F5F6;
     width: 100%;;
-  
-
 }
 
 .hero-section {
@@ -263,7 +261,7 @@ body {
    
     padding: 3.5rem 2rem;
     background-color: #fff;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around
@@ -287,11 +285,80 @@ body {
     /* filter: grayscale(100%); */
     transition: opacity 0.3s ease;
 }
-/* .brand img:hover {
-    opacity: 1;
-} */
+.brand img:hover {
+    opacity: 0.8;
+}
 
+/*------------------ video section styles ------------- */
 
+.section-container {
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 2px 20px; */
+    background-color: #043A53;
+    color: #fff;
+    /* text-align: center; */
+    /* border: 2px solid red; */
+}
+
+.text-container {
+    /* margin-top: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+}
+.headline {
+    font-size: 2.7rem;
+    font-weight: bold;
+    max-width: 430px;
+}
+.highlight {
+    color: #F0B73F;
+}
+.description {
+    /* margin-top: 10px; */
+    font-size: 1rem;
+    max-width: 350px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.video-container {
+    background-color: #f0e6d3;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 85%;
+    margin: 0 auto;
+    
+}
+.video-content {
+    position: relative;
+}
+.video-content img {
+    width: 100%;
+    height: auto;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #fff; */
+    /* color: #023047; */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
 
 
@@ -374,6 +441,13 @@ body {
     }
     .brands {
         gap: 2rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 0.9rem;
     }
 }
 
