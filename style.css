@@ -257,11 +257,9 @@ body {
 /* trusted brand section styles*/
 .client-section {
     text-align: center;
-    width: 100%;
-   
+    width: 100%; 
     padding: 3.5rem 2rem;
     background-color: #fff;
-    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around
@@ -291,7 +289,7 @@ body {
 
 /*------------------ video section styles ------------- */
 
-.section-container {
+.video-section {
     /* max-width: 1200px; */
     width: 100%;
     margin: 0 auto;
