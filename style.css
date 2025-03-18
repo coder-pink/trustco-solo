@@ -368,15 +368,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 4.2rem 1rem;
+    padding: 4.6rem 1rem;
     width: 90%;
     margin: 0 auto;
+    justify-content: space-around;
     /* border: 2px solid red; */
 }
 
 .content {
     flex: 1 1 100%;
-    max-width: 300px;
+    max-width: 220px;
     /* border: 1px solid black; */
     
     
@@ -402,16 +403,16 @@ body {
 .cards-container {
     display: flex;
     gap: 20px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     /* border: 1px solid black; */
     /* flex-wrap: wrap; */
 }
 .card {
     /* background-color: #F3F4F6; */
     background-color: var(--fill-color);
-    padding: 1.4rem;
+    padding: 1rem;
     border-radius: 1rem;
-    max-width: 240px;
+    max-width: 200px;
     flex: 1 1 100%;
 }
 .card img {
@@ -536,7 +537,42 @@ body {
         width: 40px;
         height: 40px;
     }
+
+
+
+    .benefits {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.2rem 1rem;
+       
+    }
+    .badge{
+        display: block;
+        /* width: 50%; */
+        max-width: 6.3rem;
+        margin: 0 auto;
+    }
+    .content {
+        flex: 1 1 60%;
+        max-width: 95%;
+        padding: 2rem;
+        text-align: center;
+        
+    }
+   
+    .cards-container {
+        flex: 1 1 60%;
+        flex-direction: column;
+
+        
+    }
+    .card {
+        /* flex: 1 1 calc(33% - 20px); */
+        max-width: 95%;
+        margin: 0 auto;
+    }
 }
+
 
 
 @media (max-width: 976px) {
@@ -562,6 +598,21 @@ body {
     }
     .description {
         font-size: 0.9rem;
+    }
+
+    .content{
+        text-align: center;
+        max-width: 95%;
+        padding: 1.2rem;
+    }
+
+    .content h1 {
+        font-size: 1.7rem;
+        padding-top: 1rem;
+    }
+
+    .content p{
+        font-size: 0.8rem;
     }
 
 
