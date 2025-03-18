@@ -530,7 +530,7 @@ body {
 }
 
 
-.badge {
+.badge-founder {
     position: absolute;
     top: 33%;
     right: 128px;
@@ -543,7 +543,7 @@ body {
     border-radius: 50px 50px 50px 0 ;
 }
 
-.badge img{
+.badge-founder img{
     width: 48px;
     max-width: 100%;
    
@@ -703,6 +703,18 @@ body {
         font-size: 1.5rem;
     }
 
+    .founder{
+        flex-direction: column;
+    }
+
+
+    .badge-founder {       
+        right: 58px;
+        padding: 0.3rem;
+        
+       
+    }
+
 }
 
 
@@ -747,5 +759,9 @@ body {
         font-size: 0.8rem;
     }
 
+    .founder{
+        flex-direction: column;
+    }
+   
 
 }
