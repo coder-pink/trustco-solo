@@ -679,6 +679,8 @@ body {
     background-color: var(--fill-color);
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial-text{
@@ -692,7 +694,7 @@ body {
 .testimonial-section h2 {
     font-size: 2.6rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
     display: inline-block;
     color: var(--text-color);
 }
@@ -957,6 +959,42 @@ body {
        
         border-radius: 12px;
     }
+
+
+    .testimonial-card {
+        display: none;  /* Hide all cards by default */
+    }
+    
+    .testimonial-card:first-of-type {
+        display: block;  /* Only show the first card */
+    }
+
+
+    .testimonial-text{
+        order: 1;
+    }
+
+    .testimonial-section h2{
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+
+    .testimonial-text span{
+        display: none;
+    }
+
+    .dots{
+        order: 2;
+        padding-bottom: 2rem;
+    }
+
+    .testimonial-container{
+        order: 3;
+    }
+    
     
 }
 
