@@ -20,12 +20,9 @@
 /* contact section style */
 
 #contact {
-    /* padding: 7.5rem 6rem; */
     padding: 2.8rem 1.8rem;
     background-color: var(--fill-color);
-    width: 100%;
-    /* border: 2px solid green; */
-    
+    width: 100%;   
 }
 
 .contact-section{
@@ -33,12 +30,10 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 2px solid red; */
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-    /* max-width: 1200px; */
 }
 
 
@@ -48,8 +43,6 @@
     justify-content: space-between;
     gap: 2rem;
     margin-top: 2rem;
-    /* flex-wrap: wrap; */
-    /* border: 2px solid blue; */
 }
 
 
@@ -134,6 +127,152 @@ p {
 
 
 
+/* --------------   contact  form style -------------------------*/
+
+.contact-form {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 4rem 3rem;
+    margin: 0 auto;
+}
+
+
+.contact-form p{
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--light-green);
+    border-color: var(--light-green);
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-field {
+    flex: 1;
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.input-field img{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: var(--light-green);
+    width: 1.4rem;
+    height: 2rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 0.7rem 3rem;
+    border: 1px solid var(--light-green);
+    border-radius: 4px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.input-field input::placeholder, textarea::placeholder {
+    color: var(--light-green);
+}
+
+textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--light-green);
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+
+
+
+textarea {
+    resize: none;
+}
+
+.checkbox-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.checkbox-area a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    appearance: none; 
+    padding: 1rem;
+    width: 2rem; 
+    height: 1.2rem; 
+    border-radius: 50%; 
+    border: 1px solid var(--info-hightlight); 
+    background-color: var(--fill-color); 
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: var(--light); 
+    border-color: var(--light) 
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--link-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.submit-btn {
+    background-color: var(--link-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #041723;
+}
+
+
+
 
 /* media query */
 
@@ -157,5 +296,26 @@ p {
     .contact-section {
         width: 100%;
        
+    }
+
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+    .checkbox-area{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .checkbox-text{
+        width: 100%;
+    }
+    .submit-btn{
+        width: 100%;
     }
 }
