@@ -38,27 +38,28 @@ body {
 /* header section */
 
 .header {
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
     /* max-width: 1440px; */
     height: 98px;
-    padding: 20px 60px;
+    padding: 1rem 3rem;
     background-color: var(--fill-color);
 }
 
 .logo {
     font-weight: bold;
-    font-size: 24px;
-    color: #0c2c4d;
+    font-size: 1.2rem;
+    color: var(--link-color);
 }
 
 .nav-links {
     display: flex;
     /* gap: 20px; */
     justify-content: center;
+   
 
 }
 
@@ -67,11 +68,18 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
+    
 }
 
 .nav-links a:first-child {
     font-weight: 600;
     color: var(--link-color);
+}
+
+.nav-links a:hover {
+    color: var(--link-color);
+    font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 
@@ -86,7 +94,7 @@ body {
 .auth-buttons .signup-btn {
     background: none;
     border: none;
-    padding: 10px 20px;
+    padding: 0.7rem 1.1rem;
     cursor: pointer;
     font-weight: 600;
 
@@ -1200,6 +1208,8 @@ body {
 
 @media (max-width: 768px) {
 
+    
+
     #hero {
         padding: 4.5rem 3.25rem;
 
@@ -1472,6 +1482,10 @@ body {
 
 
 @media (max-width: 976px) {
+
+    .header{
+        display: none;
+    }
     #hero {
         padding: 4.5rem 3.25rem;
     }
