@@ -1453,6 +1453,24 @@ body {
     }
 
 
+    .footer-site-section {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-site-section .footer-site-links{
+        order: 1;
+    }
+
+    .footer-site-section .language-selector{
+        order: 2;
+    }
+    .footer-site-section p{
+        order: 3;
+    }
+
+
 }
 
 
