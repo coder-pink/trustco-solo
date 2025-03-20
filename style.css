@@ -70,21 +70,23 @@ body {
     font-weight: 500;
     
 }
+.nav-links a:hover {
+    color: var(--link-color);
+    font-weight: 600;
+  transition: color 0.3s ease;
+}
 
 .hamburger-icon{
     display: none;
 }
+
 
 .nav-links a:first-child {
     font-weight: 600;
     color: var(--link-color);
 }
 
-.nav-links a:hover {
-    color: var(--link-color);
-    font-weight: 600;
-  transition: color 0.3s ease;
-}
+
 
 
 .auth-buttons {
@@ -132,15 +134,11 @@ body {
 
 .hero-section {
     max-width: 1200px;
-    /* width: 100%;
-    height: 340px; */
-
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
 
