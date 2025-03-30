@@ -1148,7 +1148,6 @@ body {
 
 .footer-site-section {
     width: 85%;
-    /* max-width: 1200px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1157,8 +1156,6 @@ body {
     padding: 1rem;
     flex-wrap: wrap;
     margin: 0 auto;
-
-    /* border: 2px solid var(--light-black); */
 }
 
 .footer-site-links {
@@ -1448,8 +1445,25 @@ body {
     }
 
     .footer-logo img {
-
         margin-bottom: 0.5rem;
+    }
+
+
+    .footer-site-section {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-site-section .footer-site-links{
+        order: 1;
+    }
+
+    .footer-site-section .language-selector{
+        order: 2;
+    }
+    .footer-site-section p{
+        order: 3;
     }
 
 
