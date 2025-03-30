@@ -122,7 +122,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -258,6 +258,10 @@ body {
 
 
 @media (max-width: 768px) {
+
+    #hero{
+        padding: 4.5rem 3.25rem;
+    }
     .hero-section {
         flex-direction: column;
         text-align: center;
@@ -277,19 +281,22 @@ body {
         font-size: 1.8rem;
     }
 
-
-    .first-img {
-        display: none;
+    .hero-content p {
+        font-size: 1rem;
     }
 
     .second-img {
+        display: none;
+    }
+
+    .first-img {
         order: 2;
 
     }
 
     .cta-buttons {
         flex-direction: column;
-        width: 50%;
+        /* width: 50%; */
         margin: 30px auto;
 
 
@@ -298,6 +305,9 @@ body {
 
 
 @media (max-width: 976px) {
+    #hero{
+        padding: 4.5rem 3.25rem;
+    }
     .hero-content h1 {
         font-size: 1.8rem;
     }
