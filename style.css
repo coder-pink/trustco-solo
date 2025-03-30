@@ -669,11 +669,120 @@ body {
 
 
 
+/*  -------------------- Testimonials Section Style ------------------*/
+
+
+.testimonial-section {
+    padding: 4rem 2rem;
+    
+    /* border: 2px solid red; */
+    background-color: var(--fill-color);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonial-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.testimonial-section h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.testimonial-text span{
+    display: flex;
+    align-items: center;  
+    color: var(--text-color);  
+    font-size: 1rem; 
+    font-weight: 700; 
+}
+
+.testimonial-text span img {
+    width: 1rem;  
+    height: auto;  
+    margin-left: 0.5rem;  
+}
 
 
 
+.testimonial-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25rem;
+    /* max-width: 350px; */
+    text-align: left;
+    /* border: 1px solid green; */
+}
 
 
+.quote-mark {
+    color: var(--secondary-color);
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.testimonial-content {
+    /* margin: 15px 0; */
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.author-info {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.author-info small{
+    color: var(--light-black);
+    font-weight: 400;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.dot {
+    height: 0.6rem;
+    width: 0.8rem;
+    background-color: #D7E0E5;
+    border-radius: 2rem;
+    margin: 0 5px;
+}
+.active {
+    background-color: var(--link-color);
+    width: 3.5rem;
+    border-radius: 1rem;
+}
 
 
 
