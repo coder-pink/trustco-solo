@@ -592,7 +592,7 @@ body {
 .info-section {
     display: flex;
     align-items: center;
-    padding: 60px 20px 20px 0px;
+    padding: 40px 20px 20px 0px;
     gap: 8rem;
     /* border: 1px solid green; */
     width: 90%;
@@ -607,17 +607,17 @@ body {
 .info-image-container {
     flex: 1;
     position: relative;
+    /* border: 1px solid black; */
 }
 .info-image-container img {
     width: 100%;
-    min-width: 22rem;
     border-radius: 12px;
 }
 
 .award-badge {
     position: absolute;
     bottom: 20%;
-    left: 87%;
+    left: 86%;
    padding: 1.2rem;
     background-color: var(--link-color);
     color: #fff;
@@ -633,6 +633,8 @@ body {
 }
 .info-text-content {
     flex: 1;
+    /* border: 2px solid red; */
+    padding: 0.7rem;
     
 }
 .info-text-content h1 {
@@ -646,6 +648,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .award-badge img{
@@ -811,11 +814,41 @@ body {
     .badge-founder {   
         bottom: 33%;    
         left: 58%;
-        padding: 0.3rem;
-        
-       
+        padding: 0.3rem;  
     }
 
+    .info-section{
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 30px;
+    }
+
+    .info-text-content{
+        order: 1;
+        margin: 0 auto;
+        padding: 2rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .info-text-content h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+
+
+    .info-image-container{
+        order: 2;
+        
+    }
+
+    .info-image-container img {
+        width: 100%;
+       
+        border-radius: 12px;
+    }
+    
 }
 
 
@@ -864,5 +897,31 @@ body {
         flex-direction: column;
     }
     */
+
+    .info-text-content h1{
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+    }
+
+    .award-badge{
+        width: 6rem;
+
+           padding: 1rem;
+           
+           
+            height: 5rem;
+         
+        
+    }
+
+
+    .award-badge p{
+        font-size: 0.8rem;
+    }
+
+    .award-badge span{
+        font-size: 0.4rem;
+        color: #fff;
+    }
 
 }
