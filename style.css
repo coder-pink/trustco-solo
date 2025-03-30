@@ -71,6 +71,10 @@ body {
     
 }
 
+.hamburger-icon{
+    display: none;
+}
+
 .nav-links a:first-child {
     font-weight: 600;
     color: var(--link-color);
@@ -1483,7 +1487,13 @@ body {
 
 @media (max-width: 976px) {
 
-    .header{
+
+    .hamburger-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links, .auth-buttons{
         display: none;
     }
     #hero {
