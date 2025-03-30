@@ -669,6 +669,8 @@ body {
 
 
 
+
+
 /*  -------------------- Testimonials Section Style ------------------*/
 
 
@@ -707,7 +709,7 @@ body {
     font-weight: 700; 
 }
 
-.testimonial-text span img {
+ .arrow {
     width: 1rem;  
     height: auto;  
     margin-left: 0.5rem;  
@@ -787,10 +789,90 @@ body {
 }
 
 
+/* -------------------- blog section styles ------------------- */
+
+.blog-section {
+    padding: 4rem 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.blog-header h1 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+.blog-header a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.4rem;
+    /* width: 80%; */
+    margin: 0 auto;
+   
+}
+.blog-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.blog-card .blog-img img{
+    width: 100%;
+    height: 200px;   
+    height: auto;
+    object-fit: cover;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-content h3 {
+    margin: 10px 0 5px;
+}
+.blog-content p {
+    color: var(--light-black);
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.blog-content small{
+    color: #000;
+    font-weight: 700;
+}
+
+.blog-content span{
+    color: var(--light-black);
+    font-weight: 500;
+}
+.blog-header a{
+    display: flex;
+    align-items: center;
+}
+.read-story {
+    display: flex;
+    align-items: center;
+    color: #0c2c4d;
+    font-weight: 700;
+
+    font-size: 0.9rem;
+    
+}
 
 
 
-
+.blog-content a{
+    text-decoration: none;
+}
 
 
 
@@ -1069,6 +1151,10 @@ body {
     .award-badge span{
         font-size: 0.4rem;
         color: #fff;
+    }
+
+    .testimonial-section h2{
+        font-size: 2rem;
     }
 
 }
