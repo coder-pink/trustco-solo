@@ -1,6 +1,7 @@
-*,
-*::before,
-*::after {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,41 +19,291 @@
 
 
 body {
-    font-family: sans-serif;
-    padding: 16px;
+
+    font-family: 'Lato', sans-serif;
     line-height: 1.5;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: var(--text-color, #333);
     background-color: var(--background-color, #fff);
-}
 
-/* h1 to h6 */
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
-    font-size: 1rem;
 }
 
 
-img {
+
+/* header section */
+
+.header {
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1440px; */
+    height: 98px;
+    padding: 20px 60px;
+    background-color: #F2F5F6;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #0c2c4d;
+}
+
+.nav-links {
+    display: flex;
+    /* gap: 20px; */
+    justify-content: center;
+
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #12141D;
+    font-weight: 500;
+}
+
+.nav-links a:first-child {
+    font-weight: 600;
+    color: #043A53;
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.auth-buttons .login-btn {
+    background-color: #fff;
+    color: #12141D;
+    border-radius: 20px;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #043A53;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+/* hero section */
+
+
+
+#hero {
+    /* text-align: center; */
+    /* padding: 120px 100px; */
+    padding: 7.5rem 6.25rem;
+    background-color: #F2F5F6;
+    width: 100%;
+
+}
+
+.hero-section {
+    max-width: 1200px;
+    /* width: 100%;
+    height: 340px; */
+
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+
+.hero-content {
+    /* width: 709px;
+    height: 279px; */
+    flex: 1 1 300px;
+    text-align: center;
+    /* border: 2px solid blue; */
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #12141D;
+    line-height: 1.3;
+}
+
+
+.hero-image img {
     max-width: 100%;
+    /* width: 197.42px; */
     height: auto;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+}
+
+
+.hero-content h1 span {
+    color: #043A53;
+}
+
+.hero-content p {
+    font-size: 18px;
+    /* margin: 20px 0; */
+
+    color: #12141D;
+}
+
+.cta-buttons {
+    margin-top: 32px;
+    /* width: 409px;
+    height: 67.18px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+
+/* .primary-btn {
+    width: 141px;
+    height: 60px;
+
+} */
+
+.primary-btn {
+    background-color: #043A53;
+
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    transition: background 0.3s ease;
+
+
+}
+
+.primary-btn:hover {
+    background-color: #005b96;
+}
+
+
+.secondary-btn {
+    background-color: transparent;
+    /* display: inline-flex; */
+    align-items: center;
+    color: #043A53;
+    /* width: 236.18px;
+    height: 67.18px; */
+    /* border: 2px solid #0c2c4d; */
+    background-color: transparent;
+    justify-content: center;
+    border: none;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.secondary-btn .icon {
+    margin-right: 8px;
+    width: 35.18px;
+    height: 35.18px;
+    display: inline-block;
+}
+
+.secondary-btn:hover {
+    background-color: #8b8e91;
+    color: #fff;
+}
+
+
+
+/* .trustpilot {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+} */
+
+
+/* ------------------------------- media query styles for tablet----------------------------- */
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .first-img {
+        display: none;
+    }
+
+    .second-img {
+        order: 2;
+
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 50%;
+        margin: 30px auto;
+
+
+    }
+}
+
+
+@media (max-width: 976px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .second-img {
+        display: none;
+    }
+
 }
