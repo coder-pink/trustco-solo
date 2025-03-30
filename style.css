@@ -20,6 +20,8 @@
     --fill-color: #F2F5F6;
     --dark-black: #1E1E1E;
     --info-hightlight: #92A7B0;
+    --light-green : #91A7B0;
+    --light : #D7E0E5;
 }
 
 
@@ -124,8 +126,6 @@ body {
 
 
 #hero {
-    /* text-align: center; */
-    /* padding: 120px 100px; */
     padding: 7.5rem 6.25rem;
     background-color: var(--fill-color);
     width: 100%;
@@ -146,8 +146,6 @@ body {
 
 
 .hero-content {
-    /* width: 709px;
-    height: 279px; */
     flex: 1 1 300px;
     text-align: center;
     /* border: 2px solid blue; */
@@ -163,15 +161,12 @@ body {
 
 .hero-image img {
     max-width: 100%;
-    /* width: 197.42px; */
     height: auto;
     object-fit: cover;
     background-size: cover;
     background-position: center;
 
     background-repeat: no-repeat;
-    /* border-radius: 12px; */
-    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
 }
 
 
@@ -188,22 +183,13 @@ body {
 
 .cta-buttons {
     margin-top: 32px;
-    /* width: 409px;
-    height: 67.18px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     justify-content: center;
-    /* border: 1px solid blue; */
 }
 
-
-/* .primary-btn {
-    width: 141px;
-    height: 60px;
-
-} */
 
 .primary-btn {
     background-color: var(--link-color);
@@ -310,18 +296,13 @@ body {
 /*------------------ video section styles ------------- */
 
 .video-section {
-    /* max-width: 1200px; */
     width: 100%;
     margin: 0 auto;
-    /* padding: 2px 20px; */
     background-color: var(--link-color);
     color: #fff;
-    /* text-align: center; */
-    /* border: 2px solid red; */
 }
 
 .text-container {
-    /* margin-top: 30px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -344,7 +325,6 @@ body {
 }
 
 .description {
-    /* margin-top: 10px; */
     font-size: 1rem;
     max-width: 361px;
     font-weight: 300;
@@ -374,8 +354,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: #fff; */
-    /* color: #023047; */
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -397,7 +375,6 @@ body {
     width: 90%;
     margin: 0 auto;
     justify-content: space-around;
-    /* border: 2px solid red; */
 }
 
 .content {
@@ -433,8 +410,6 @@ body {
     display: flex;
     gap: 20px;
     padding-bottom: 1rem;
-    /* border: 1px solid black; */
-    /* flex-wrap: wrap; */
 }
 
 .card {
@@ -571,22 +546,6 @@ body {
     z-index: 1;
 
 }
-
-
-/* .badge-founder {
-    position: absolute;
-    
-    top: 33%;
-    right: 36%;
-    padding: 0.2rem;
-    background-color: var(--link-color);
-    color: #fff;
-   height: 8rem;
-   width: 100%;
-   width: 3rem;
-    z-index: -1;
-    border-radius: 50px ;
-} */
 
 
 .badge-founder {
@@ -831,7 +790,7 @@ body {
 .dot {
     height: 0.6rem;
     width: 0.8rem;
-    background-color: #D7E0E5;
+    background-color: var(--light);
     border-radius: 2rem;
     margin: 0 5px;
 }
